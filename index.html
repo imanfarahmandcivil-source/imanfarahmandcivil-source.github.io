@@ -1,0 +1,688 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Iman Farahmand CV</title>
+<meta name="referrer" content="no-referrer">
+<style>
+/* Fonts are self-hosted (SIL Open Font License), so no visitor data goes to Google or any other third party. */
+@font-face{font-family:"Archivo";font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(fonts/archivo-latin-wdth-normal.woff2) format("woff2-variations"),url(fonts/archivo-latin-wdth-normal.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-display:swap;font-weight:400;src:url(fonts/instrument-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-display:swap;font-weight:500;src:url(fonts/instrument-sans-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-display:swap;font-weight:600;src:url(fonts/instrument-sans-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-display:swap;font-weight:400;src:url(fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-display:swap;font-weight:500;src:url(fonts/jetbrains-mono-latin-500-normal.woff2) format("woff2")}
+/* legal notice and privacy */
+.legal{margin-top:6px;color:var(--muted);font-size:13.5px;line-height:1.6}
+.legal summary{cursor:pointer;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);padding:6px 0}
+.legal-b{display:grid;gap:12px;max-width:72ch;padding:8px 0 4px}
+.legal-b h3{font-family:var(--f-body);font-size:14px;font-weight:600;color:var(--ink-2);margin:0}
+</style>
+<style>
+/* Layout: one long descent. The portrait is a fixed pixel-grid backdrop that dissolves as you go down,
+   a staff gauge on the right reads the depth, and each CV part is a pinned or tilting scene. Single dark world by choice. */
+:root{
+  --bg:#060a11; --bg-2:#0b121d; --panel:rgba(12,19,31,.92); --line:#1f2c44;
+  --ink:#eaf0f8; --ink-2:#a3b3ca; --muted:#667792;
+  --accent:#3f6dff; --accent-2:#93b1ff; --signal:#f0b54a;
+  --f-display:"Archivo","Arial Black","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gut-l:max(16px, env(safe-area-inset-left, 0px));
+  --gut-r:max(16px, env(safe-area-inset-right, 0px));
+  --split-a:rgba(255,70,100,.6); --split-b:rgba(70,220,255,.6);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;overflow-x:clip;-webkit-font-smoothing:antialiased}
+html[data-lang="en"] .de,html[data-lang="de"] .en{display:none!important}
+a{color:var(--accent-2)}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+
+/* fixed backdrop */
+#lens{position:fixed;left:0;top:0;width:0;height:0;border-radius:50%;z-index:0;pointer-events:none;border:1px solid var(--ink);background-color:var(--bg);background-repeat:no-repeat;opacity:0;transition:opacity .25s;will-change:transform}
+#bg,#water{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block;pointer-events:none}
+.log{position:fixed;inset:-20vh 0 auto 0;z-index:0;pointer-events:none;opacity:.075;font-family:var(--f-mono);font-size:11px;line-height:1.9;color:var(--accent-2);white-space:pre;columns:3;column-gap:6vw;padding-left:var(--gut-l);padding-right:var(--gut-r);will-change:transform}
+.crt{position:fixed;inset:0;z-index:40;pointer-events:none;background:
+  repeating-linear-gradient(to bottom,rgba(255,255,255,.028) 0 1px,transparent 1px 3px),
+  radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.5) 100%)}
+
+/* loader */
+.loader{position:fixed;inset:0;z-index:60;display:grid;place-items:center;background:var(--bg);transition:opacity .6s ease,visibility .6s}
+.loader.done{opacity:0;visibility:hidden}
+.loader-in{display:grid;gap:10px;justify-items:center;color:var(--ink)}
+.loader-bar{width:150px;height:8px;border:1px solid var(--ink-2);border-radius:6px;overflow:hidden}
+.loader-bar i{display:block;height:100%;width:0;background:var(--ink);transition:width .25s linear}
+
+/* top bar */
+.bar{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:calc(14px + env(safe-area-inset-top,0px)) var(--gut-r) 14px var(--gut-l);
+  background:linear-gradient(to bottom,rgba(6,10,17,.85),rgba(6,10,17,0))}
+.bar .brand{color:var(--ink);text-decoration:none}
+.bar-r{display:flex;align-items:center;gap:14px}
+.lang{display:flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.lang button{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;background:transparent;color:var(--ink-2);border:0;padding:6px 10px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.bar .talk{color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:7px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--signal);display:inline-block;box-shadow:0 0 0 0 rgba(240,181,74,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(240,181,74,0)}100%{box-shadow:0 0 0 0 rgba(240,181,74,0)}}
+
+/* staff gauge */
+.gauge{position:fixed;right:max(18px, env(safe-area-inset-right, 0px));top:50%;transform:translateY(-50%);height:56vh;width:120px;z-index:45;pointer-events:none}
+.gauge-rail{position:absolute;right:0;top:0;bottom:0;width:14px;border-right:1px solid var(--ink-2);
+  background:repeating-linear-gradient(to bottom,var(--ink-2) 0 1px,transparent 1px 10%) right/14px 100% no-repeat,
+             repeating-linear-gradient(to bottom,var(--muted) 0 1px,transparent 1px 2%) right/7px 100% no-repeat}
+.gauge-mark{position:absolute;right:-4px;top:0;will-change:transform;width:22px;height:2px;background:var(--signal);box-shadow:0 0 10px var(--signal)}
+.gauge-read{position:absolute;right:0;top:-40px;text-align:right;white-space:nowrap;color:var(--ink)}
+.gauge-read b{display:block;font-weight:500;color:var(--signal);font-variant-numeric:tabular-nums}
+.prog{position:fixed;left:0;top:0;height:2px;width:100%;background:var(--signal);transform-origin:0 50%;transform:scaleX(0);z-index:55;display:none}
+
+main{position:relative;z-index:1;overflow-x:clip}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
+section{position:relative}
+.eyebrow{color:var(--accent-2);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent-2)}
+h2{font-size:clamp(2.1rem,6.2vw,5rem);font-weight:800;font-stretch:125%;text-transform:uppercase;line-height:.95;letter-spacing:-.01em}
+.sec{padding-block:clamp(72px,12vh,150px)}
+.sec-h{display:grid;gap:14px;margin-bottom:clamp(28px,5vh,56px)}
+
+/* hero */
+.hero{height:190svh}
+.hero-pin{position:sticky;top:0;height:100svh;display:flex;align-items:flex-end}
+.hero-in{width:100%;padding-bottom:clamp(28px,6vh,64px);display:grid;gap:18px;will-change:transform}
+h1{font-size:clamp(2.6rem,10.4vw,10rem);font-weight:900;font-stretch:125%;line-height:.84;text-transform:uppercase;letter-spacing:-.02em}
+h1 > span{display:block}
+.ch{display:inline-block}
+.in .ch{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(.55em) rotateX(-70deg)}}
+
+h1 .l2{color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.role{max-width:46ch;color:var(--ink-2);font-size:clamp(1rem,1.5vw,1.2rem)}
+.avail{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--panel);border-radius:4px;padding:9px 13px;width:fit-content;max-width:100%;color:var(--ink)}
+.hint{color:var(--muted);display:flex;align-items:center;gap:8px}
+.hint i{width:1px;height:26px;background:var(--muted);display:block;animation:drop 1.8s ease-in-out infinite;transform-origin:top}
+@keyframes drop{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* profile */
+.words{font-family:var(--f-display);font-weight:600;font-stretch:108%;font-size:clamp(1.55rem,4.1vw,3.5rem);line-height:1.14;letter-spacing:-.01em;max-width:22ch;max-width:min(100%,24em)}
+.words .w{opacity:.3;transition:opacity .35s ease}
+.words .w.on{opacity:1}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(36px,7vh,80px)}
+.stat{background:var(--bg-2);padding:20px 18px;display:grid;gap:4px;min-width:0}
+.stat b{font-family:var(--f-display);font-stretch:125%;font-weight:800;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1;font-variant-numeric:tabular-nums}
+.stat > span{color:var(--ink-2);font-size:14px}
+.fine{color:var(--muted);font-size:13.5px;margin-top:12px}
+
+/* cards */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:clamp(20px,3vw,34px);will-change:transform;transform-origin:50% 50%}
+.edu{display:grid;gap:18px}
+.edu-top{display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;align-items:baseline}
+.card h3{font-size:clamp(1.25rem,2.6vw,1.9rem);font-weight:700;font-stretch:110%;line-height:1.1}
+.when{color:var(--signal);white-space:nowrap}
+.sub{color:var(--ink-2);margin-top:6px}
+.courses{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:0}
+.courses li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:15.5px}
+.grade{font-family:var(--f-display);font-stretch:125%;font-weight:800;font-size:clamp(1.2rem,2.3vw,1.65rem);line-height:1;color:var(--bg);background:var(--accent-2);border-radius:5px;padding:6px 11px 5px;font-variant-numeric:tabular-nums}
+.grade.top{background:var(--signal);box-shadow:0 0 20px rgba(240,181,74,.3)}
+.grade.none{font-family:var(--f-mono);font-stretch:100%;font-weight:400;font-size:13px;padding:4px 8px;background:transparent;color:var(--muted);border:1px solid var(--line)}
+
+/* projects: pinned horizontal scene */
+.hscene-h{padding-top:clamp(72px,12vh,150px)}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;align-items:center;perspective:1400px}
+.track{display:flex;gap:clamp(16px,3vw,40px);padding-left:max(var(--gut-l),calc((100vw - 1180px)/2 + 16px));padding-right:12vw;will-change:transform}
+.proj{flex:0 0 min(84vw,520px);background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;will-change:transform;transform-style:preserve-3d}
+.proj canvas{width:100%;height:clamp(120px,24svh,210px);display:block;background:var(--bg-2);border-bottom:1px solid var(--line)}
+.proj-b{padding:clamp(16px,2.4vw,26px);display:grid;gap:10px}
+.proj-t{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.tool{color:var(--accent-2)}
+.proj h3{font-size:clamp(1.1rem,2.2vw,1.5rem);font-weight:700;font-stretch:108%;line-height:1.15}
+.proj ul{margin:0;padding-left:18px;color:var(--ink-2);font-size:15px;display:grid;gap:3px}
+.count{color:var(--muted);padding-left:max(var(--gut-l),calc((100vw - 1180px)/2 + 16px));position:absolute;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:0}
+
+/* engineering figures that draw themselves on scroll */
+.bgfig{position:absolute;right:-3vw;top:clamp(40px,9vh,110px);width:min(980px,92vw);opacity:.3;pointer-events:none;z-index:0}
+#experience .bgfig{right:auto;left:8vw;top:auto;bottom:4vh}
+.sec > .wrap{position:relative;z-index:1}
+.draw{width:100%;height:auto;display:block;overflow:visible}
+.draw path,.draw circle,.draw rect{fill:none;stroke:var(--accent-2);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.draw .d{stroke-dasharray:1;stroke-dashoffset:var(--p,0)}
+.draw .hi{stroke:var(--signal)}
+.draw .wt{stroke:var(--accent);stroke-width:3}
+.draw .thin{stroke:var(--muted);stroke-width:1.2}
+.draw .flow{stroke:var(--signal);stroke-dasharray:10 14;animation:dash 1.1s linear infinite}
+.draw text{font-family:var(--f-mono);font-size:17px;fill:var(--ink-2);opacity:calc(1 - var(--p,0))}
+.draw text.hi{fill:var(--signal);stroke:none}
+@keyframes dash{to{stroke-dashoffset:-24}}
+.card{position:relative}
+.card::before,.card::after{content:"";position:absolute;width:16px;height:16px;pointer-events:none}
+.card::before{left:-1px;top:-1px;border-left:2px solid var(--signal);border-top:2px solid var(--signal);border-top-left-radius:6px}
+.card::after{right:-1px;bottom:-1px;border-right:2px solid var(--signal);border-bottom:2px solid var(--signal);border-bottom-right-radius:6px}
+@media (max-width:700px){.draw text{display:none}.draw path,.draw circle,.draw rect{stroke-width:3.2}}
+
+/* experience timeline */
+.tl{position:relative;display:grid;gap:clamp(22px,4vh,40px);padding-left:34px}
+.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.tl-fill{position:absolute;left:5px;top:6px;width:3px;height:calc(100% - 12px);clip-path:inset(0 0 100% 0);background:repeating-linear-gradient(to bottom,var(--signal) 0 9px,transparent 9px 15px);background-size:3px 15px;animation:pipe .7s linear infinite;box-shadow:0 0 12px rgba(240,181,74,.5);border-radius:2px}
+@keyframes pipe{to{background-position:0 15px}}
+.job{position:relative;display:grid;gap:4px}
+.job::before{content:"";position:absolute;left:-34px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--ink-2)}
+.job h3{font-size:clamp(1.15rem,2.4vw,1.6rem);font-weight:700;font-stretch:108%;line-height:1.15}
+.job p{color:var(--ink-2);max-width:62ch}
+
+/* skills */
+.drift{overflow:hidden;margin-bottom:clamp(28px,5vh,56px)}
+.drift div{font-family:var(--f-display);font-weight:900;font-stretch:125%;text-transform:uppercase;white-space:nowrap;font-size:clamp(3rem,11vw,9rem);line-height:1;color:transparent;-webkit-text-stroke:1px var(--line);will-change:transform}
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.skill h3{font-size:1.05rem;font-weight:700;font-stretch:110%;text-transform:uppercase;letter-spacing:.03em;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.chips li{border:1px solid var(--line);border-radius:4px;padding:6px 10px;font-size:14.5px;background:var(--bg-2)}
+.chips small{color:var(--muted);font-size:12.5px}
+.langs{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.langs li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;font-size:15.5px}
+.langs .lv{font-family:var(--f-mono);font-size:13px;color:var(--signal)}
+.meter{grid-column:1/-1;height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent-2)}
+
+/* contact */
+.contact{min-height:100svh;display:flex;align-items:flex-end}
+.contact-in{width:100%;display:grid;gap:22px;padding-block:clamp(72px,12vh,150px) clamp(28px,5vh,56px)}
+.contact h2{font-size:clamp(2.3rem,8.4vw,7.6rem);max-width:12ch}
+.reach{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
+.mail{display:flex;align-items:center;gap:12px;border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:10px 10px 10px 16px;min-width:0;max-width:100%}
+.mail > span{user-select:all;overflow-wrap:anywhere;min-width:0;font-size:clamp(.8rem,2.4vw,1.15rem)}
+.btn{font:inherit;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border-radius:4px;padding:10px 14px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{background:var(--signal);border-color:var(--signal);color:var(--bg)}
+.foot{display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:20px}
+
+@media (max-width:900px){
+  .gauge{display:none}.prog{display:block}
+  .log{columns:1}
+  .stats{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr}
+  .bar .talk{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero{height:100svh}
+  .pin{position:static;height:auto;overflow-x:auto;padding-block:8px 24px}
+  .count,.hint i{display:none}
+  .dot{animation:none}
+  .words .w{opacity:1}
+  .in .ch{animation:none}
+  .draw .flow,.tl-fill{animation:none}
+  .tl-fill{clip-path:none}
+}
+</style>
+<script>
+try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(e){}
+(function(){var l='en';try{l=localStorage.getItem('cv-lang')||'en'}catch(e){}if(l!=='de')l='en';document.documentElement.dataset.lang=l;document.documentElement.lang=l})();
+</script>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+<canvas id="water" aria-hidden="true"></canvas>
+<div id="lens" aria-hidden="true"></div>
+<div class="log" id="log" aria-hidden="true"></div>
+<div class="crt" aria-hidden="true"></div>
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<div class="loader" id="loader" aria-hidden="true"><div class="loader-in"><span class="mono">Loading</span><div class="loader-bar"><i id="loader-i"></i></div></div></div>
+
+<header class="bar">
+  <a class="brand mono" href="#top">Iman Farahmand</a>
+  <div class="bar-r">
+    <a class="talk mono" href="#contact"><i class="dot"></i><span class="en">Let's talk</span><span class="de">Kontakt</span></a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" id="lang-de" data-lang="de" aria-pressed="false">DE</button>
+    </div>
+  </div>
+</header>
+
+<aside class="gauge" aria-hidden="true">
+  <div class="gauge-rail"></div>
+  <div class="gauge-mark" id="g-mark"></div>
+  <div class="gauge-read mono" id="g-read"><span id="g-name">Intro</span><b id="g-pct">000</b></div>
+</aside>
+
+<main id="top">
+
+<section class="hero" id="intro" data-en="Intro" data-de="Start">
+  <div class="hero-pin"><div class="wrap hero-in" id="hero-in">
+    <p class="mono eyebrow"><span class="en">Stuttgart · Water resources engineering</span><span class="de">Stuttgart · Wasserwirtschaft</span></p>
+    <h1><span>Iman</span><span class="l2">Farahmand</span></h1>
+    <p class="role"><span class="en">M.Sc. student in Water Resources Engineering and Management (WAREM) at the University of Stuttgart. Civil engineer (B.Sc.) with site experience.</span><span class="de">M.Sc.-Student Wasserwirtschaft (WAREM) an der Universität Stuttgart. Bauingenieur (B.Sc.) mit Baustellenerfahrung.</span></p>
+    <p class="avail mono"><i class="dot"></i><span class="en">Open for a Master's thesis from March/April 2027</span><span class="de">Masterarbeit gesucht ab März/April 2027</span></p>
+    <p class="hint mono"><i></i><span class="en">Scroll</span><span class="de">Scrollen</span></p>
+  </div></div>
+</section>
+
+<section class="sec" id="profile" data-en="Profile" data-de="Profil">
+  <div class="wrap">
+    <div class="sec-h"><p class="mono eyebrow"><span class="en">Profile</span><span class="de">Profil</span></p></div>
+    <p class="words" id="words"><span class="en">I am a civil engineer and a water resources master's student in Stuttgart. I model floods, groundwater and dams, and I am looking for a six-month master's thesis from March or April 2027.</span><span class="de">Ich bin Bauingenieur und Masterstudent der Wasserwirtschaft in Stuttgart. Ich modelliere Hochwasser, Grundwasser und Talsperren und suche ab März oder April 2027 eine sechsmonatige Masterarbeit.</span></p>
+    <div class="stats">
+      <div class="stat g"><b><span class="en" data-n="2.2" data-d="1">2.2</span><span class="de" data-n="2.2" data-d="1" data-sep=",">2,2</span></b><span><span class="en">Current grade average</span><span class="de">Aktueller Notendurchschnitt</span></span></div>
+      <div class="stat"><b data-n="5">5</b><span><span class="en">Study projects, from groundwater to dams</span><span class="de">Studienprojekte, von Grundwasser bis Talsperre</span></span></div>
+      <div class="stat"><b data-n="3">3</b><span><span class="en">Languages: English, German, Persian</span><span class="de">Sprachen: Englisch, Deutsch, Persisch</span></span></div>
+    </div>
+    <p class="fine g"><span class="en">German grading scale: 1.0 is the best grade, 4.0 is the lowest pass.</span><span class="de">Deutsche Notenskala: 1,0 ist die beste Note.</span></p>
+  </div>
+</section>
+
+<section class="sec" id="education" data-en="Education" data-de="Studium">
+  <svg class="draw bgfig" viewBox="0 0 1000 240" aria-hidden="true"><path class="d thin" pathLength="1" d="M20 204H980"/><path class="d" pathLength="1" d="M430 204L470 48H522L625 204Z"/><path class="d wt" pathLength="1" d="M20 82H462"/><path class="d wt" pathLength="1" d="M625 186H980"/><path class="d" pathLength="1" d="M240 82l-9 -14h18z"/><path class="d hi" pathLength="1" d="M462 82L372 204H430"/><path class="d thin" pathLength="1" d="M720 48V204M708 48h24M708 204h24"/><path class="d thin" pathLength="1" d="M60 204l-14 16M120 204l-14 16M180 204l-14 16M240 204l-14 16M300 204l-14 16M360 204l-14 16M700 204l-14 16M760 204l-14 16M820 204l-14 16M880 204l-14 16M940 204l-14 16"/><text x="262" y="72">HWL</text><text class="hi" x="300" y="168">p = ρ g h</text><text x="734" y="132">H</text><text x="478" y="36">crest</text></svg>
+  <div class="wrap">
+    <div class="sec-h"><p class="mono eyebrow"><span class="en">Education</span><span class="de">Studium</span></p><h2><span class="en">Education</span><span class="de">Studium</span></h2></div>
+    <div class="edu">
+      <article class="card tilt">
+        <div class="edu-top"><h3>M.Sc. Water Resources Engineering and Management (WAREM)</h3><span class="mono when"><span class="en">Since 10/2024</span><span class="de">Seit 10/2024</span></span></div>
+        <p class="sub"><span class="en">University of Stuttgart · 5th semester · taught in English · thesis from 03/2027, six months<span class="g"> · grade average 2.2 (51 ECTS)</span></span><span class="de">Universität Stuttgart · 5. Fachsemester · Unterrichtssprache Englisch · Masterarbeit ab 03/2027, Dauer 6 Monate<span class="g"> · Notendurchschnitt 2,2 (51 ECTS)</span></span></p>
+        <ul class="courses">
+          <li><span>Integrated Watershed Modeling</span><span class="grade g top"><span class="en">1.3</span><span class="de">1,3</span></span></li>
+          <li><span>Integrated Flood Protection Planning</span><span class="grade g top"><span class="en">1.7</span><span class="de">1,7</span></span></li>
+          <li><span>River and Sediment Management</span><span class="grade g"><span class="en">2.0</span><span class="de">2,0</span></span></li>
+          <li><span>Applied Fluid Mechanics</span><span class="grade g"><span class="en">2.0</span><span class="de">2,0</span></span></li>
+          <li><span>Hydraulic Structures</span><span class="grade none g"><span class="en">focus</span><span class="de">Schwerpunkt</span></span></li>
+        </ul>
+      </article>
+      <article class="card tilt">
+        <div class="edu-top"><h3><span class="en">B.Sc. Civil Engineering</span><span class="de">B.Sc. Bauingenieurwesen</span></h3><span class="mono when">2018 – 2022</span></div>
+        <p class="sub"><span class="en">University of Guilan, Rasht, Iran<span class="g"> · final grade 16 of 20 (about 2.2 on the German scale)</span></span><span class="de">Universität Guilan, Rasht, Iran<span class="g"> · Abschlussnote 16 von 20 (entspricht etwa der deutschen Note 2,2)</span></span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="hscene" id="projects" data-en="Projects" data-de="Projekte">
+  <div class="wrap hscene-h"><div class="sec-h" style="margin-bottom:0"><p class="mono eyebrow"><span class="en">Study projects and technical work</span><span class="de">Studienprojekte und technische Arbeiten</span></p><h2><span class="en">Projects</span><span class="de">Projekte</span></h2></div></div>
+  <div class="pin" id="pin">
+    <div class="track" id="track">
+      <article class="proj"><canvas data-art="gw" aria-hidden="true"></canvas><div class="proj-b">
+        <div class="proj-t"><span class="mono tool">MODFLOW · MATLAB</span><span class="grade g top"><span class="en">1.3</span><span class="de">1,3</span></span></div>
+        <h3><span class="en">Groundwater flow model for the Stuttgart region</span><span class="de">Grundwasserströmungsmodell für die Region Stuttgart</span></h3>
+        <ul><li><span class="en">Built a numerical groundwater flow model in MODFLOW (PMWIN 5) at the LS3 chair</span><span class="de">Aufbau eines numerischen Grundwasserströmungsmodells mit MODFLOW (PMWIN 5) am Lehrstuhl LS3</span></li><li><span class="en">Evaluated the model results in MATLAB</span><span class="de">Auswertung der Modellergebnisse in MATLAB</span></li></ul>
+      </div></article>
+      <article class="proj"><canvas data-art="flood" aria-hidden="true"></canvas><div class="proj-b">
+        <div class="proj-t"><span class="mono tool">HEC-RAS · QGIS</span><span class="grade g top"><span class="en">1.7</span><span class="de">1,7</span></span></div>
+        <h3><span class="en">Flood protection planning on the Neuse River (USA)</span><span class="de">Hochwasserschutzplanung am Neuse River (USA)</span></h3>
+        <ul><li><span class="en">Hydraulic model of the river reach in HEC-RAS, geodata in QGIS</span><span class="de">Hydraulische Modellierung des Flussabschnitts mit HEC-RAS, Geodaten in QGIS</span></li><li><span class="en">Analysed and rated the flood protection measures, evaluation in Excel</span><span class="de">Analyse und Bewertung der Hochwasserschutzmaßnahmen, Auswertung in Excel</span></li></ul>
+      </div></article>
+      <article class="proj"><canvas data-art="dam" aria-hidden="true"></canvas><div class="proj-b">
+        <div class="proj-t"><span class="mono tool">Excel</span><span class="grade g"><span class="en">2.0</span><span class="de">2,0</span></span></div>
+        <h3><span class="en">Removal of Matilija Dam (California, USA)</span><span class="de">Rückbau der Matilija-Talsperre (Kalifornien, USA)</span></h3>
+        <ul><li><span class="en">Case study on dam removal with a focus on sediment management</span><span class="de">Fallstudie zum Talsperrenrückbau mit Schwerpunkt Sedimentmanagement</span></li><li><span class="en">Calculations and evaluation in Excel</span><span class="de">Berechnungen und Auswertung in Excel</span></li></ul>
+      </div></article>
+      <article class="proj"><canvas data-art="eco" aria-hidden="true"></canvas><div class="proj-b">
+        <div class="proj-t"><span class="mono tool">ArcGIS Pro</span></div>
+        <h3><span class="en">Ecological connectivity between protected areas in Stuttgart</span><span class="de">Ökologische Konnektivität zwischen Schutzgebieten in Stuttgart</span></h3>
+        <ul><li><span class="en">GIS-based assessment of ecological connectivity and landscape fragmentation</span><span class="de">GIS-basierte Bewertung von ökologischer Vernetzung und Landschaftsfragmentierung</span></li></ul>
+      </div></article>
+      <article class="proj"><canvas data-art="survey" aria-hidden="true"></canvas><div class="proj-b">
+        <div class="proj-t"><span class="mono tool"><span class="en">Total station · GNSS</span><span class="de">Tachymeter · GNSS</span></span></div>
+        <h3><span class="en">Survey and mapping in Stadtgarten Stuttgart</span><span class="de">Vermessung und Kartierung im Stadtgarten Stuttgart</span></h3>
+        <ul><li><span class="en">Group project: surveyed a planned building site with total station and GNSS receiver</span><span class="de">Gruppenprojekt: Geländeaufnahme einer geplanten Baufläche mit Tachymeter und GNSS-Empfänger</span></li><li><span class="en">Processed the data and drew a detailed map in ArcGIS Pro</span><span class="de">Aufbereitung der Messdaten und Erstellung einer detaillierten Karte in ArcGIS Pro</span></li></ul>
+      </div></article>
+    </div>
+    <p class="count mono" id="count">01 / 05</p>
+  </div>
+</section>
+
+<section class="sec" id="experience" data-en="Experience" data-de="Praxis">
+  <svg class="draw bgfig" viewBox="0 0 1000 250" aria-hidden="true"><path class="d" pathLength="1" style="stroke-width:5" d="M150 110H850"/><path class="d" pathLength="1" d="M150 112l-18 30h36z"/><path class="d" pathLength="1" d="M850 112l-18 30h36zM826 150h48"/><path class="d thin" pathLength="1" d="M150 46H850"/><path class="d thin" pathLength="1" d="M150 46V100l-5 -10m5 10l5 -10M250 46V100l-5 -10m5 10l5 -10M350 46V100l-5 -10m5 10l5 -10M450 46V100l-5 -10m5 10l5 -10M550 46V100l-5 -10m5 10l5 -10M650 46V100l-5 -10m5 10l5 -10M750 46V100l-5 -10m5 10l5 -10M850 46V100l-5 -10m5 10l5 -10"/><path class="d hi" pathLength="1" d="M150 160Q500 290 850 160"/><path class="d thin" pathLength="1" d="M150 236H850M150 226v20M850 226v20"/><text x="486" y="34">q</text><text class="hi" x="420" y="212">M = q l² / 8</text><text x="494" y="230">l</text></svg>
+  <div class="wrap">
+    <div class="sec-h"><p class="mono eyebrow"><span class="en">Work experience</span><span class="de">Praxiserfahrung</span></p><h2><span class="en">Experience</span><span class="de">Praxis</span></h2></div>
+    <div class="tl" id="tl"><div class="tl-fill" id="tl-fill"></div>
+      <article class="job"><span class="mono when"><span class="en">Since 02/2026</span><span class="de">Seit 02/2026</span></span><h3><span class="en">Working student · Lichtbild Manufaktur, Leinfelden-Echterdingen</span><span class="de">Werkstudent · Lichtbild Manufaktur, Leinfelden-Echterdingen</span></h3><p><span class="en">Organisation and administration. German is the working language in the team and with customers.</span><span class="de">Organisation und Administration; Arbeitssprache Deutsch im Team und mit Kunden.</span></p></article>
+      <article class="job"><span class="mono when">12/2022 – 09/2023</span><h3><span class="en">Site supervision · reinforced concrete building, Anzali, Iran</span><span class="de">Bauüberwachung · Stahlbetongebäude, Anzali, Iran</span></h3><p><span class="en">Coordinated the construction sequence and checked the work against the technical drawings.</span><span class="de">Koordination der Bauabläufe und Kontrolle der Ausführung anhand technischer Pläne.</span></p></article>
+      <article class="job"><span class="mono when">09/2022 – 12/2022</span><h3><span class="en">Internship · foundation works, Tehran, Iran</span><span class="de">Praktikum · Fundamentbau, Teheran, Iran</span></h3><p><span class="en">Worked on the foundation of a five-storey residential building.</span><span class="de">Mitarbeit beim Fundamentbau eines fünfstöckigen Wohngebäudes.</span></p></article>
+      <article class="job"><span class="mono when">04/2020 – 05/2022</span><h3><span class="en">Construction project · residential building, Rasht, Iran</span><span class="de">Bauprojekt · Wohngebäude, Rasht, Iran</span></h3><p><span class="en">Supported the construction work. Drew architectural and execution drawings in AutoCAD.</span><span class="de">Begleitung der Bauausführung; Architektur- und Ausführungszeichnungen in AutoCAD.</span></p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="skills" data-en="Skills" data-de="Kenntnisse">
+  <svg class="draw bgfig" viewBox="0 0 1000 260" aria-hidden="true"><path class="d" pathLength="1" d="M20 60H250L360 210H640L750 60H980"/><path class="d wt" pathLength="1" d="M286 110H714"/><path class="d" pathLength="1" d="M500 110l-9 -14h18z"/><path class="d thin" pathLength="1" d="M810 110V210M798 110h24M798 210h24"/><path class="d thin" pathLength="1" d="M360 240H640M360 230v20M640 230v20"/><path class="d thin" pathLength="1" d="M60 60l-14 16M120 60l-14 16M180 60l-14 16M800 60l-14 16M860 60l-14 16M920 60l-14 16"/><text x="824" y="166">h</text><text x="494" y="232">b</text><text class="hi" x="440" y="166">Q = A · v</text><text x="262" y="150">1 : m</text></svg>
+  <div class="drift" aria-hidden="true"><div id="drift">HEC-RAS · MODFLOW · ArcGIS Pro · QGIS · Python · MATLAB · AutoCAD · HEC-RAS · MODFLOW · ArcGIS Pro · QGIS</div></div>
+  <div class="wrap">
+    <div class="sec-h"><p class="mono eyebrow"><span class="en">Skills</span><span class="de">Kenntnisse</span></p><h2><span class="en">Skills</span><span class="de">Kenntnisse</span></h2></div>
+    <div class="skills">
+      <article class="card tilt skill"><h3><span class="en">Modelling</span><span class="de">Modellierung</span></h3><ul class="chips"><li>HEC-RAS <small><span class="en">hydraulic modelling</span><span class="de">hydraulische Modellierung</span></small></li><li>MODFLOW / PMWIN <small><span class="en">groundwater flow</span><span class="de">Grundwasserströmung</span></small></li></ul></article>
+      <article class="card tilt skill"><h3><span class="en">GIS and CAD</span><span class="de">GIS und CAD</span></h3><ul class="chips"><li>ArcGIS Pro</li><li>QGIS <small><span class="en">mapping, spatial analysis</span><span class="de">Kartierung, räumliche Analysen</span></small></li><li>AutoCAD</li></ul></article>
+      <article class="card tilt skill"><h3><span class="en">Programming</span><span class="de">Programmierung</span></h3><ul class="chips"><li>Python <small><span class="en">Jupyter, optimisation, model calculations</span><span class="de">Jupyter, Optimierungsverfahren, Modellrechnungen</span></small></li><li>MATLAB</li><li>Excel</li></ul></article>
+      <article class="card tilt skill"><h3><span class="en">Languages</span><span class="de">Sprachen</span></h3><ul class="langs">
+        <li><span><span class="en">English · language of study</span><span class="de">Englisch · Studiensprache</span></span><span class="lv">C1</span><span class="meter"><i style="width:83%"></i></span></li>
+        <li><span><span class="en">German · working language in my job</span><span class="de">Deutsch · Arbeitssprache im Job</span></span><span class="lv">B2</span><span class="meter"><i style="width:66%"></i></span></li>
+        <li><span><span class="en">Persian · mother tongue</span><span class="de">Persisch · Muttersprache</span></span><span class="lv"><span class="en">Native</span><span class="de">Mutterspr.</span></span><span class="meter"><i style="width:100%"></i></span></li>
+      </ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" data-en="Contact" data-de="Kontakt">
+  <div class="wrap contact-in">
+    <p class="mono eyebrow"><span class="en">Contact</span><span class="de">Kontakt</span></p>
+    <h2><span class="en">Let's talk about a thesis topic.</span><span class="de">Sprechen wir über ein Thema.</span></h2>
+    <p class="role"><span class="en">Six months, from March or April 2027. Flood protection, groundwater, water supply or hydraulic structures. I am happy to shape the topic around a question you are working on now.</span><span class="de">Sechs Monate, ab März oder April 2027. Hochwasserschutz, Grundwasser, Wasserversorgung oder Wasserbau. Gern entwickle ich das Thema aus einer laufenden Fragestellung bei Ihnen.</span></p>
+    <div class="reach">
+      <div class="mail"><span id="email">imanfarahmand.civil@gmail.com</span><button type="button" class="btn" id="copy"><span class="en">Copy</span><span class="de">Kopieren</span></button></div>
+      <a class="btn ghost" href="https://www.linkedin.com/in/iman-farahmand-9523b436a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+    <div class="foot mono"><span>Iman Farahmand · Stuttgart</span><span><span class="en">Updated November 2026</span><span class="de">Stand November 2026</span></span></div>
+    <details class="legal" id="legal">
+      <summary><span class="en">Legal notice and privacy</span><span class="de">Impressum und Datenschutz</span></summary>
+      <div class="legal-b">
+        <div><h3><span class="en">Legal notice</span><span class="de">Impressum</span></h3>
+          <p><span class="en">Iman Farahmand, Stuttgart, Germany · imanfarahmand.civil@gmail.com. This is a private, non-commercial page for my job and thesis applications.</span><span class="de">Iman Farahmand, Stuttgart · imanfarahmand.civil@gmail.com. Dies ist eine private, nicht-kommerzielle Seite für meine Bewerbungen um eine Masterarbeit.</span></p></div>
+        <div><h3><span class="en">Privacy</span><span class="de">Datenschutz</span></h3>
+          <p><span class="en">This page sets no cookies and uses no tracking, analytics or advertising. It loads nothing from third parties: fonts and images come from the same server as the page. When you open the page, the hosting provider processes the technically necessary server log data (such as IP address and time of access). If you switch the language, that choice is stored only in your own browser. The LinkedIn link takes you to LinkedIn only when you click it. For questions or requests under the GDPR (access, correction, deletion), write to the email address above.</span><span class="de">Diese Seite setzt keine Cookies und nutzt kein Tracking, keine Analyse- und keine Werbedienste. Sie lädt nichts von Drittanbietern: Schriften und Bilder kommen vom selben Server wie die Seite. Beim Aufruf verarbeitet der Hosting-Anbieter die technisch notwendigen Server-Logdaten (z. B. IP-Adresse und Zeitpunkt des Zugriffs). Wenn Sie die Sprache wechseln, wird diese Wahl nur in Ihrem eigenen Browser gespeichert. Der LinkedIn-Link führt erst nach einem Klick zu LinkedIn. Für Fragen oder Anliegen nach der DSGVO (Auskunft, Berichtigung, Löschung) schreiben Sie mir an die oben genannte E-Mail-Adresse.</span></p></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<script>
+(function(){
+"use strict";
+var root=document.documentElement, RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var clamp=function(v,a,b){return Math.min(b,Math.max(a,v))}, lerp=function(a,b,t){return a+(b-a)*t}, ease=function(t){return t*t*(3-2*t)};
+var $=function(id){return document.getElementById(id)};
+var vw=innerWidth, vh=innerHeight, dpr=Math.min(devicePixelRatio||1,1.5);
+
+/* ---------- language ---------- */
+function setLang(l){
+  root.dataset.lang=l; root.lang=l;
+  try{localStorage.setItem('cv-lang',l)}catch(e){}
+  $('lang-en').setAttribute('aria-pressed',l==='en'); $('lang-de').setAttribute('aria-pressed',l==='de');
+  measure(); update();
+}
+$('lang-en').addEventListener('click',function(){setLang('en')});
+$('lang-de').addEventListener('click',function(){setLang('de')});
+
+/* ---------- word-by-word statement ---------- */
+var wordSets=[];
+Array.prototype.forEach.call($('words').children,function(span){
+  var ws=span.textContent.split(/\s+/); span.textContent='';
+  ws.forEach(function(w,i){var s=document.createElement('span');s.className='w';s.textContent=w;span.appendChild(s);if(i<ws.length-1)span.appendChild(document.createTextNode(' '))});
+  wordSets.push(span.querySelectorAll('.w'));
+});
+
+/* ---------- hero name letters ---------- */
+Array.prototype.forEach.call(document.querySelectorAll('h1 > span'),function(sp,r){
+  var t=sp.textContent; sp.textContent=''; sp.setAttribute('aria-label',t);
+  t.split('').forEach(function(ch,i){var s=document.createElement('span');s.className='ch';s.setAttribute('aria-hidden','true');s.textContent=ch;s.style.animationDelay=(r*0.18+i*0.045)+'s';sp.appendChild(s)});
+});
+
+/* ---------- background model log (decorative) ---------- */
+(function(){
+  var lines=['HEC-RAS 6.5  steady flow  reach: NEUSE','  RS 142.80  Q=412.0 m3/s  WSE=18.42 m','  RS 141.35  Q=412.0 m3/s  WSE=18.11 m','  Froude 0.31  subcritical  OK','MODFLOW  stress period 1  step 12','  head change max 0.0031 m  cell(14,22,1)','  budget  in 1.842E+04  out 1.841E+04','  percent discrepancy 0.02','QGIS  reproject EPSG:25832 -> done','  raster clip dem_stuttgart.tif','ArcGIS Pro  cost distance  patches=38','  corridor width 250 m  resistance grid','GNSS  fix RTK  sats 17  hdop 0.6','  station ST-04  E 513204.11  N 5403877.52','sediment  Vs=5.9E+06 m3  d50=12 mm','  trap efficiency 0.84','python  optimize.minimize  iter 41','  f=2.184E-03  converged','matlab  contourf(head)  saved fig_07.png',''];
+  var out=[];for(var i=0;i<12;i++)out=out.concat(lines);
+  $('log').textContent=out.join('\n');
+})();
+
+/* ---------- pixel-grid portrait ---------- */
+var cv=$('bg'), ctx=cv.getContext('2d'), off=document.createElement('canvas'), octx=off.getContext('2d',{willReadFrequently:true});
+var img=new Image(), ready=false, introT=RM?1:0, introStart=0, bdpr=1;
+var last='', ripple=null, vel=0, lastY=scrollY, cur={alpha:1,zoom:1};
+var lensEl=$('lens'), lens={x:-1e4,y:-1e4,on:false};
+function startRipple(x,y){if(RM)return;ripple={x:x,y:y,t0:performance.now()};requestTick()}
+var BG=[6,10,17];
+function place(zoom){
+  var iw=img.naturalWidth, ih=img.naturalHeight, wide=vw>860;
+  var s=Math.max(1.3*vh/ih,(wide?0.55:1)*vw/iw)*zoom, dw=iw*s, dh=ih*s;
+  var cx=wide?vw*0.69:vw*0.5, fy=0.43;
+  return {dx:cx-dw/2, dy:vh*(wide?0.3:0.34)-dh*fy, dw:dw, dh:dh, wide:wide};
+}
+function draw(cell,alpha,zoom,clr){
+  if(!ready||vw<2||vh<2)return;
+  /* quantise so the canvas is only redrawn when the picture really changes */
+  var c=Math.max(4,Math.round(cell)); alpha=Math.round(alpha*40)/40; zoom=Math.round(zoom*100)/100; clr=Math.round(clr*20)/20;
+  var rp=ripple, age=rp?performance.now()-rp.t0:0; if(rp&&(age>1500||alpha<0.3))rp=null;
+  var key=c+'|'+alpha+'|'+zoom+'|'+clr+'|'+vw+'|'+vh+'|'+(rp?Math.round(age/16):0);
+  /* clr = 1 at the very top and very bottom of the page: the plain sharp photo, no squares. A ripple brings the squares back for a moment. */
+  var mk=1-clr; if(rp)mk=Math.max(mk,0.9*(1-age/1500));
+  if(key===last)return; last=key;
+  var p=place(zoom), cols=Math.ceil(vw/c), rows=Math.ceil(vh/c);
+  off.width=cols; off.height=rows;
+  octx.drawImage(img,p.dx/c,p.dy/c,p.dw/c,p.dh/c);
+  var d=octx.getImageData(0,0,cols,rows).data;
+  ctx.setTransform(bdpr,0,0,bdpr,0,0); ctx.clearRect(0,0,vw,vh);
+  var rest=vw>860?6:5, sharp=clamp(1-(c-rest)/10,0,1);
+  /* soft photo underneath so the face stays readable at rest */
+  if(sharp>0.01){ctx.globalAlpha=alpha*sharp*(0.62+0.38*clr); ctx.drawImage(img,p.dx,p.dy,p.dw,p.dh); ctx.globalAlpha=1}
+  var fadeW=p.wide?p.dw*0.3:0, bgc='rgba('+BG.join(',')+',';
+  var x0=Math.max(0,Math.floor(p.dx/c)), x1=Math.min(cols,Math.ceil((p.dx+p.dw)/c)), lastA=-1;
+  for(var y=0;mk>0.02&&y<rows;y++){
+    var kb=mk*alpha*(1-0.8*clamp((y*c-vh*0.55)/(vh*0.45),0,1));
+    for(var x=x0;x<x1;x++){
+      var i=(y*cols+x)*4, a=d[i+3]; if(a<8)continue;
+      var r=d[i],g=d[i+1],b=d[i+2], lum=(0.299*r+0.587*g+0.114*b)/255, k=kb;
+      if(fadeW){k*=clamp((x*c-p.dx)/fadeW,0,1)*clamp((p.dx+p.dw-x*c)/fadeW,0,1)}
+      if(k<0.03||lum<0.03)continue;
+      var s=Math.max(1,(c-1)*(0.42+0.58*lum));
+      if(rp){var ddx=x*c-rp.x, ddy=y*c-rp.y, q=Math.sqrt(ddx*ddx+ddy*ddy)-age*0.9, en=Math.exp(-q*q/9000)*(1-age/1500); s=Math.max(1,Math.min(c*1.7,s*(1+0.9*Math.sin(q/14)*en)+c*0.5*en))}
+      var o=(c-s)/2, ka=Math.round(k*16)/16;
+      if(ka!==lastA){ctx.globalAlpha=ka;lastA=ka}
+      ctx.fillStyle='rgb('+r+','+g+','+b+')';
+      ctx.fillRect(x*c+o,y*c+o,s,s);
+    }
+  }
+  ctx.globalAlpha=1;
+  if(sharp>0.01){
+    /* fade the soft photo into the page at its edges and toward the text */
+    var gr;
+    if(fadeW){
+      gr=ctx.createLinearGradient(p.dx,0,p.dx+fadeW,0);gr.addColorStop(0,bgc+'1)');gr.addColorStop(1,bgc+'0)');ctx.fillStyle=gr;ctx.fillRect(p.dx-2,0,fadeW+2,vh);
+      gr=ctx.createLinearGradient(p.dx+p.dw-fadeW,0,p.dx+p.dw,0);gr.addColorStop(0,bgc+'0)');gr.addColorStop(1,bgc+'1)');ctx.fillStyle=gr;ctx.fillRect(p.dx+p.dw-fadeW,0,fadeW+2,vh);
+    }
+    gr=ctx.createLinearGradient(0,vh*0.5,0,vh);gr.addColorStop(0,bgc+'0)');gr.addColorStop(1,bgc+(0.9*sharp).toFixed(2)+')');ctx.fillStyle=gr;ctx.fillRect(0,vh*0.5,vw,vh*0.5);
+  }
+}
+/* lens: the sharp photo under the pointer, as its own layer so the canvas is not redrawn when the mouse moves */
+function placeLens(){
+  var show=lens.on&&ready&&cur.alpha>0.3&&!(cur.clr>0.5);
+  lensEl.style.opacity=show?1:0; if(!show)return;
+  var R=Math.round(Math.min(vw,vh)*0.14), p=place(Math.round(cur.zoom*100)/100), lx=lens.x-R, ly=lens.y-R;
+  lensEl.style.width=lensEl.style.height=(R*2)+'px';
+  lensEl.style.transform='translate3d('+lx+'px,'+ly+'px,0)';
+  lensEl.style.backgroundSize=p.dw+'px '+p.dh+'px';
+  lensEl.style.backgroundPosition=(p.dx-lx-1)+'px '+(p.dy-ly-1)+'px';
+}
+function sizeCanvas(){bdpr=Math.min(devicePixelRatio||1,vw>1100?1:2);cv.width=Math.round(vw*bdpr);cv.height=Math.round(vh*bdpr);last=''}
+img.onload=function(){ready=true;introStart=performance.now();lensEl.style.backgroundImage='url("'+img.src+'")';$('loader-i').style.width='100%';setTimeout(function(){$('loader').classList.add('done');root.classList.add('in')},RM?0:350);tick()};
+img.onerror=function(){$('loader').classList.add('done')};
+setTimeout(function(){$('loader').classList.add('done');root.classList.add('in')},3500);
+$('loader-i').style.width='60%';
+img.src='photo.jpg';
+
+addEventListener('pointermove',function(e){if(e.pointerType==='touch')return;lens.x=e.clientX;lens.y=e.clientY;lens.on=true;placeLens()},{passive:true});
+document.addEventListener('pointerleave',function(){lens.on=false;placeLens()});
+addEventListener('pointerdown',function(e){startRipple(e.clientX,e.clientY)},{passive:true});
+
+/* ---------- project illustrations ---------- */
+function rng(seed){var s=seed;return function(){s=(s*1664525+1013904223)%4294967296;return s/4294967296}}
+var CS=getComputedStyle(root), C={line:CS.getPropertyValue('--line').trim(),a:CS.getPropertyValue('--accent').trim(),a2:CS.getPropertyValue('--accent-2').trim(),sig:CS.getPropertyValue('--signal').trim(),ink:CS.getPropertyValue('--ink-2').trim(),mut:CS.getPropertyValue('--muted').trim()};
+var ART={
+  gw:function(g,w,h){var R=rng(7);g.lineWidth=1;
+    for(var k=0;k<9;k++){g.strokeStyle=k%3===0?C.a2:C.a;g.globalAlpha=k%3===0?.9:.5;g.beginPath();
+      for(var t=0;t<=64;t++){var an=t/64*Math.PI*2,rr=(18+k*17)*(1+0.18*Math.sin(an*3+k*0.4)+0.1*Math.cos(an*5));var x=w*0.42+Math.cos(an)*rr*1.7,y=h*0.52+Math.sin(an)*rr*0.9;t?g.lineTo(x,y):g.moveTo(x,y)}
+      g.closePath();g.stroke()}
+    g.globalAlpha=1;g.fillStyle=C.sig;for(var i=0;i<5;i++){var x=w*(0.15+R()*0.7),y=h*(0.2+R()*0.6);g.fillRect(x-2,y-2,4,4)}
+    g.fillStyle=C.a2;g.beginPath();g.arc(w*0.42,h*0.52,4,0,7);g.fill()},
+  flood:function(g,w,h){var pts=[[0,.3],[.12,.32],[.2,.22],[.26,.34],[.36,.62],[.44,.8],[.56,.82],[.64,.6],[.74,.36],[.8,.24],[.88,.34],[1,.3]];
+    g.fillStyle=C.a;g.globalAlpha=.35;g.beginPath();g.moveTo(w*.3,h*.46);g.lineTo(w*.7,h*.46);g.lineTo(w*.64,h*.6);g.lineTo(w*.56,h*.82);g.lineTo(w*.44,h*.8);g.lineTo(w*.36,h*.62);g.closePath();g.fill();g.globalAlpha=1;
+    g.strokeStyle=C.ink;g.lineWidth=1.5;g.beginPath();pts.forEach(function(p,i){i?g.lineTo(p[0]*w,p[1]*h):g.moveTo(p[0]*w,p[1]*h)});g.stroke();
+    g.strokeStyle=C.a2;g.beginPath();g.moveTo(w*.3,h*.46);g.lineTo(w*.7,h*.46);g.stroke();
+    g.setLineDash([5,5]);g.strokeStyle=C.sig;g.beginPath();g.moveTo(w*.19,h*.27);g.lineTo(w*.81,h*.27);g.stroke();g.setLineDash([]);
+    g.fillStyle=C.sig;g.font='10px JetBrains Mono, monospace';g.fillText('HQ100',w*.83,h*.25)},
+  dam:function(g,w,h){g.strokeStyle=C.ink;g.lineWidth=1.5;g.beginPath();g.moveTo(0,h*.5);g.lineTo(w*.55,h*.78);g.lineTo(w,h*.86);g.stroke();
+    g.fillStyle=C.sig;g.globalAlpha=.45;g.beginPath();g.moveTo(w*.12,h*.56);g.lineTo(w*.55,h*.42);g.lineTo(w*.55,h*.78);g.closePath();g.fill();g.globalAlpha=1;
+    g.fillStyle=C.a;g.globalAlpha=.35;g.beginPath();g.moveTo(w*.06,h*.34);g.lineTo(w*.55,h*.34);g.lineTo(w*.55,h*.42);g.lineTo(w*.12,h*.56);g.lineTo(w*.06,h*.53);g.closePath();g.fill();g.globalAlpha=1;
+    g.fillStyle=C.ink;g.beginPath();g.moveTo(w*.55,h*.26);g.lineTo(w*.6,h*.26);g.lineTo(w*.66,h*.8);g.lineTo(w*.55,h*.78);g.closePath();g.fill();
+    g.fillStyle=C.sig;g.font='10px JetBrains Mono, monospace';g.fillText('sediment',w*.26,h*.62)},
+  eco:function(g,w,h){var R=rng(21),n=[],i,j;for(i=0;i<11;i++)n.push([w*(0.08+R()*0.84),h*(0.14+R()*0.72),5+R()*13]);
+    g.lineWidth=1;for(i=0;i<n.length;i++)for(j=i+1;j<n.length;j++){var dx=n[i][0]-n[j][0],dy=n[i][1]-n[j][1],dd=Math.sqrt(dx*dx+dy*dy);if(dd<w*0.3){g.strokeStyle=C.a2;g.globalAlpha=1-dd/(w*0.3);g.beginPath();g.moveTo(n[i][0],n[i][1]);g.lineTo(n[j][0],n[j][1]);g.stroke()}}
+    g.globalAlpha=1;n.forEach(function(p,k){g.fillStyle=k%4===0?C.sig:C.a;g.globalAlpha=.8;g.beginPath();g.arc(p[0],p[1],p[2],0,7);g.fill()});g.globalAlpha=1},
+  survey:function(g,w,h){var R=rng(5),pts=[],i;g.strokeStyle=C.line;g.lineWidth=1;for(i=1;i<10;i++){g.beginPath();g.moveTo(w*i/10,0);g.lineTo(w*i/10,h);g.stroke()}for(i=1;i<5;i++){g.beginPath();g.moveTo(0,h*i/5);g.lineTo(w,h*i/5);g.stroke()}
+    for(i=0;i<9;i++)pts.push([w*(0.1+R()*0.8),h*(0.15+R()*0.7)]);var st=[w*0.5,h*0.55];
+    g.strokeStyle=C.a2;g.globalAlpha=.6;pts.forEach(function(p){g.beginPath();g.moveTo(st[0],st[1]);g.lineTo(p[0],p[1]);g.stroke()});g.globalAlpha=1;
+    g.fillStyle=C.ink;pts.forEach(function(p){g.beginPath();g.moveTo(p[0],p[1]-4);g.lineTo(p[0]+4,p[1]+3);g.lineTo(p[0]-4,p[1]+3);g.closePath();g.fill()});
+    g.strokeStyle=C.sig;g.lineWidth=1.5;g.beginPath();g.arc(st[0],st[1],9,0,7);g.moveTo(st[0]-15,st[1]);g.lineTo(st[0]+15,st[1]);g.moveTo(st[0],st[1]-15);g.lineTo(st[0],st[1]+15);g.stroke()}
+};
+function drawArt(){
+  Array.prototype.forEach.call(document.querySelectorAll('canvas[data-art]'),function(c){
+    var w=c.clientWidth,h=c.clientHeight;if(!w||!h)return;c.width=w*dpr;c.height=h*dpr;var g=c.getContext('2d');g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,w,h);ART[c.dataset.art](g,w,h);
+  });
+}
+
+/* ---------- scroll scenes ---------- */
+/* Everything the scroll handler needs is measured once (and again on resize), so a scroll frame only does arithmetic and writes transforms. */
+var secs=Array.prototype.slice.call(document.querySelectorAll('main > section'));
+var hero=$('intro'), heroIn=$('hero-in'), hs=$('projects'), pin=$('pin'), track=$('track'), projs=track.querySelectorAll('.proj'),
+    tl=$('tl'), tlFill=$('tl-fill'), tilts=document.querySelectorAll('.tilt'), figs=document.querySelectorAll('.draw'), contact=$('contact'), words=$('words'), drift=$('drift'), logEl=$('log'),
+    gMark=$('g-mark'), gName=$('g-name'), gPct=$('g-pct'), prog=$('prog'), countEl=$('count'), skewEls=document.querySelectorAll('h2,.drift');
+var dist=0, docH=1, M={sec:[],proj:[],tilt:[],fig:[]}, S={name:'',pct:'',count:'',wn:-1,skew:0};
+function pageTop(el){return el.getBoundingClientRect().top+scrollY}
+function measure(){
+  vw=innerWidth; vh=innerHeight; var i;
+  for(i=0;i<tilts.length;i++)tilts[i].style.transform='';
+  if(!RM){hs.style.height='';dist=Math.max(0,track.scrollWidth-pin.clientWidth);hs.style.height=(hs.firstElementChild.offsetHeight+pin.offsetHeight+dist)+'px'}
+  docH=Math.max(1,document.documentElement.scrollHeight-vh);
+  M.heroH=hero.offsetHeight; M.contact=pageTop(contact); M.gH=gMark.parentNode.offsetHeight;
+  M.sec=secs.map(pageTop);
+  M.words={t:pageTop(words),h:words.offsetHeight};
+  M.hs={t:pageTop(hs),h:hs.offsetHeight,pt:hs.firstElementChild.offsetHeight};
+  M.proj=[];for(i=0;i<projs.length;i++)M.proj.push(projs[i].offsetLeft+projs[i].offsetWidth/2);
+  M.tilt=[];for(i=0;i<tilts.length;i++)M.tilt.push({t:pageTop(tilts[i]),h:tilts[i].offsetHeight});
+  M.fig=[];for(i=0;i<figs.length;i++){var fr=figs[i].getBoundingClientRect();M.fig.push({t:fr.top+scrollY,h:fr.height})}
+  M.tl={t:pageTop(tl),h:tl.offsetHeight};
+  M.drift=pageTop(drift.parentNode);
+}
+var ticking=false;
+function requestTick(){if(!ticking){ticking=true;requestAnimationFrame(tick)}}
+function tick(){ticking=false;update();
+  var again=false;
+  if(ready&&introT<1){introT=clamp((performance.now()-introStart)/1500,0,1);again=true;
+    if(introT>=1){var pp=place(1);startRipple(pp.dx+pp.dw*0.5,pp.dy+pp.dh*0.43)}}
+  if(ripple){if(performance.now()-ripple.t0>1500)ripple=null;again=true}
+  if(!RM){
+    var dy=scrollY-lastY;lastY=scrollY;vel=lerp(vel,clamp(dy,-60,60),0.25);if(Math.abs(vel)<0.05)vel=0;else again=true;
+    var sk=Math.round(vel/14*0.6*10)/10;
+    if(sk!==S.skew){S.skew=sk;for(var i=0;i<skewEls.length;i++)skewEls[i].style.transform=sk?'skewY('+sk+'deg)':''}
+  }
+  if(again)requestTick();
+}
+function update(){
+  var sy=scrollY, p=clamp(sy/docH,0,1), lang=root.dataset.lang, i;
+  /* gauge */
+  var ci=0;for(i=0;i<M.sec.length;i++)if(M.sec[i]-sy<vh*0.5)ci=i;
+  gMark.style.transform='translate3d(0,'+(p*M.gH)+'px,0)';
+  var nm=secs[ci].dataset[lang]||secs[ci].dataset.en, pc=('00'+Math.round(p*100)).slice(-3);
+  if(nm!==S.name){S.name=nm;gName.textContent=nm}
+  if(pc!==S.pct){S.pct=pc;gPct.textContent=pc}
+  prog.style.transform='scaleX('+p+')';
+  /* hero + portrait */
+  var hp=clamp(sy/Math.max(1,M.heroH-vh),0,1), ep=ease(clamp((vh-(M.contact-sy))/(vh*0.9),0,1));
+  var rest=vw>860?6:5, e=ease(hp);
+  var cell=lerp(rest,30,e), alpha=lerp(1,0.14,e), zoom=lerp(1,1.14,e);
+  cell=lerp(cell,rest,ep); alpha=lerp(alpha,0.8,ep); zoom=lerp(zoom,1.04,ep);
+  if(introT<1)cell=lerp(64,cell,ease(introT));
+  var clr=Math.max(1-ease(clamp(hp/0.3,0,1)), ease(clamp((ep-0.8)/0.2,0,1)));
+  if(introT<1)clr*=clamp((introT-0.7)/0.3,0,1);
+  cur.alpha=alpha; cur.zoom=zoom; cur.clr=clr;
+  draw(cell,alpha,zoom,clr); placeLens();
+  if(RM)return;
+  if(hp<1){heroIn.style.transform='translate3d(0,'+(-hp*60)+'px,0)'; heroIn.style.opacity=1-clamp((hp-0.55)/0.45,0,1)*0.9}
+  logEl.style.transform='translate3d(0,'+(-sy*0.12)+'px,0)';
+  /* words */
+  var wp=clamp((vh*0.86-(M.words.t-sy))/(M.words.h+vh*0.36),0,1);
+  for(var w=0;w<wordSets.length;w++){var set=wordSets[w], n=Math.round(wp*set.length*1.05);
+    if(w===0){if(n===S.wn)break;S.wn=n}
+    for(i=0;i<set.length;i++)set[i].classList.toggle('on',i<Math.round(wp*set.length*1.05))}
+  /* projects */
+  var hTop=M.hs.t-sy;
+  if(hTop<vh&&hTop+M.hs.h>0){
+    var t=dist?clamp((-hTop-M.hs.pt)/dist,0,1):0, nearest=0, best=1e9;
+    track.style.transform='translate3d('+(-t*dist)+'px,0,0)';
+    for(i=0;i<projs.length;i++){var o=(M.proj[i]-t*dist-vw/2)/vw, oc=clamp(o,-1.2,1.2);
+      projs[i].style.transform='rotateY('+(oc*-16).toFixed(2)+'deg) translateZ('+(-Math.abs(oc)*90).toFixed(1)+'px)';
+      if(Math.abs(o)<best){best=Math.abs(o);nearest=i}}
+    var ct='0'+(nearest+1)+' / 0'+projs.length; if(ct!==S.count){S.count=ct;countEl.textContent=ct}
+  }
+  /* tilt cards */
+  for(i=0;i<tilts.length;i++){var tt=M.tilt[i].t-sy; if(tt+M.tilt[i].h<-200||tt>vh+200)continue;
+    var of=clamp((tt+M.tilt[i].h/2-vh/2)/vh,-1,1);
+    tilts[i].style.transform='perspective(1100px) rotateX('+(of*-13).toFixed(2)+'deg) scale('+(1-Math.abs(of)*0.05).toFixed(3)+')'}
+  /* timeline pipe fills by clipping, which costs no layout */
+  var lt=M.tl.t-sy; if(lt<vh&&lt+M.tl.h>0)tlFill.style.clipPath='inset(0 0 '+((1-clamp((vh*0.62-lt)/M.tl.h,0,1))*100).toFixed(1)+'% 0)';
+  /* background drawings */
+  for(i=0;i<figs.length;i++){var ft=M.fig[i].t-sy; if(ft+M.fig[i].h<-100||ft>vh+100)continue; figs[i].style.setProperty('--p',(1-ease(clamp((vh*0.92-ft)/(vh*0.55),0,1))).toFixed(2))}
+  /* drift */
+  var dt=M.drift-sy; if(dt<vh+200&&dt>-400)drift.style.transform='translate3d('+(-(vh-dt)*0.35).toFixed(1)+'px,0,0)';
+}
+addEventListener('scroll',requestTick,{passive:true});
+addEventListener('resize',function(){measure();sizeCanvas();sizeWater();drawArt();requestTick()});
+/* always start at the top: the browser (or the page that hosts it) must not restore an old scroll position */
+function toTop(){var h=document.documentElement,sb=h.style.scrollBehavior;h.style.scrollBehavior='auto';window.scrollTo(0,0);h.style.scrollBehavior=sb}
+if(location.hash){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
+toTop();
+addEventListener('load',function(){toTop();measure();requestTick();setTimeout(function(){toTop();requestTick()},60)});
+addEventListener('pageshow',function(e){if(e.persisted){toTop();requestTick()}});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){measure();drawArt();requestTick()});
+
+/* ---------- rising water level (follows the gauge) ---------- */
+/* Drawn at half resolution and about 30 frames a second: it is a soft shape, so nobody sees the difference. */
+var wc=$('water'), wx=wc.getContext('2d'), wlev=0, parts=[], wLast=0, WS=0.5;
+for(var pi=0;pi<42;pi++)parts.push({x:Math.random(),d:Math.random(),s:0.02+Math.random()*0.05,r:0.8+Math.random()*1.6});
+function sizeWater(){wc.width=Math.ceil(vw*WS);wc.height=Math.ceil(vh*WS)}
+function surf(y0,L,t,close){wx.beginPath();if(close)wx.moveTo(0,vh);for(var x=0;x<=vw+16;x+=16){var y=y0+L*11+Math.sin(x*0.011+t*0.0011*(L?-1:1.3)+L*2)*7+Math.sin(x*0.027-t*0.0017)*3;(x||close)?wx.lineTo(x,y):wx.moveTo(x,y)}if(close){wx.lineTo(vw,vh);wx.closePath()}}
+function drawWater(t){
+  wlev=lerp(wlev,clamp(scrollY/docH,0,1),RM?1:0.14); var y0=vh*(0.985-0.55*wlev);
+  wx.setTransform(WS,0,0,WS,0,0); wx.clearRect(0,0,vw,vh);
+  for(var L=0;L<2;L++){surf(y0,L,t,true);var g=wx.createLinearGradient(0,y0,0,vh);g.addColorStop(0,'rgba(63,109,255,'+(L?0.17:0.10)+')');g.addColorStop(1,'rgba(63,109,255,0.02)');wx.fillStyle=g;wx.fill()}
+  surf(y0,1,t,false);wx.strokeStyle='rgba(147,177,255,.5)';wx.lineWidth=1.5;wx.stroke();
+  wx.fillStyle='rgba(147,177,255,.5)';
+  for(var k=0;k<parts.length;k++){var q=parts[k], px=((q.x+t*0.00002*q.s*40)%1)*(vw+20)-10, py=y0+24+q.d*(vh-y0)+Math.sin(px*0.02+t*0.001+k)*5; if(py<vh)wx.fillRect(px,py,q.r*2.4,q.r*1.4)}
+}
+function waterLoop(t){if(!document.hidden&&t-wLast>30){wLast=t;drawWater(t)}requestAnimationFrame(waterLoop)}
+sizeWater(); if(RM){drawWater(0);addEventListener('scroll',function(){drawWater(0)},{passive:true})}else requestAnimationFrame(waterLoop);
+
+/* ---------- decode headings and count the figures as they enter ---------- */
+if(!RM&&'IntersectionObserver' in window){
+  var GL='ABCDEFGHJKLMNPRSTUVWXYZ0123456789#/_';
+  var scr=function(el){var span=el.querySelector('.'+root.dataset.lang)||el, txt=span.textContent, t0=performance.now(), dur=Math.min(900,300+txt.length*22);
+    (function f(){var k=(performance.now()-t0)/dur, n=Math.floor(k*txt.length), out=txt.slice(0,n);
+      for(var i=n;i<txt.length;i++){var ch=txt[i];out+=(ch===' '||k>=1)?ch:GL[(Math.random()*GL.length)|0]}
+      span.textContent=k>=1?txt:out; if(k<1)requestAnimationFrame(f)})()};
+  var cnt=function(box){Array.prototype.forEach.call(box.querySelectorAll('[data-n]'),function(el){var v=+el.dataset.n, d=+(el.dataset.d||0), sep=el.dataset.sep||'.', t0=performance.now();
+    (function f(){var k=clamp((performance.now()-t0)/1100,0,1);el.textContent=(v*ease(k)).toFixed(d).replace('.',sep);if(k<1)requestAnimationFrame(f)})()})};
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);if(e.target.classList.contains('stats'))cnt(e.target);else scr(e.target)})},{threshold:0.6});
+  Array.prototype.forEach.call(document.querySelectorAll('h2,.sec .eyebrow,.hscene .eyebrow,.contact .eyebrow,.stats'),function(el){io.observe(el)});
+}
+
+/* ---------- grades toggle ---------- */
+Array.prototype.forEach.call(document.querySelectorAll('.gbtn'),function(b){b.addEventListener('click',function(){
+  var on=root.dataset.grades!=='on'; if(on)root.dataset.grades='on'; else delete root.dataset.grades;
+  Array.prototype.forEach.call(document.querySelectorAll('.gbtn'),function(x){x.setAttribute('aria-pressed',on)});
+  if(on&&typeof cnt==='function')cnt(document.querySelector('.stats'));
+  measure(); drawArt(); requestTick();
+})});
+
+/* ---------- copy email ---------- */
+$('copy').addEventListener('click',function(){
+  var btn=this, txt=$('email').textContent, done=function(){var o=btn.innerHTML;btn.textContent=root.dataset.lang==='de'?'Kopiert':'Copied';setTimeout(function(){btn.innerHTML=o},1600)};
+  var sel=function(){var r=document.createRange();r.selectNodeContents($('email'));var s=getSelection();s.removeAllRanges();s.addRange(r)};
+  try{navigator.clipboard.writeText(txt).then(done,sel)}catch(e){sel()}
+});
+
+$('legal').addEventListener('toggle',function(){measure();requestTick()});
+$('lang-en').setAttribute('aria-pressed',root.dataset.lang==='en'); $('lang-de').setAttribute('aria-pressed',root.dataset.lang==='de');
+sizeCanvas(); measure(); drawArt(); update();
+})();
+</script>
+
+</body></html>
